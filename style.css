@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(139, 140, 141);
+    padding: 0;
+    margin: 0;
+}
+h2{
+    margin: 0;
+}
+#info{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100vw;
+}
+#nombre{
+    display: flex;
+    align-items: center;
+    margin: 2px 4px 4px 4px; /*Arriba - Derecha - Abajo - Izquierda*/
+    justify-content: center;
+    border: 1px transparent;
+    border-radius: 14px;
+    text-shadow: 2px 2px 3px rgb(27, 20, 1);
+    color: rgb(255, 255, 255);
+    background-color: rgba(44, 37, 18, 0.884);
+    height: calc(10vh - 6px);
+    width: calc(100vw - 8px);
+    flex-direction: column;
+
+}
+#base{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /*alinear verticalmente*/
+    align-items: center; /*Alinear horizontalmente*/
+    flex-direction: column;
+}
+
+#habilidades{
+    border: 1px transparent;
+    border-radius: 14px;
+    margin-left: 4px;
+    margin-right: 4px;
+    text-shadow: 2px 2px 3px rgb(27, 20, 1);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background-color: rgba(102, 97, 82, 0.884);
+    height: 100% ;
+    flex: 1;
+
+}
+#fran{
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    height: 45%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    justify-self:flex-end
+}
+img{
+    margin-top: 200px;
+    height: auto;
+    max-width: 100%;   
+}
+#experiencia{
+    margin-left: 2px;
+    border: 1px transparent;
+    border-radius: 14px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(194, 193, 186);
+    height: 100%;
+    flex: 5;
+
+}
+#labs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+}
+#tecnologias{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+
+}
+#estudios,#cualidades,#contacto,#idiomas,#libreta{
+    margin-bottom: 14px;
+    height: fit-content;
+    margin-left: 4px;
+    display: flex;
+    flex-direction: column;
+}
