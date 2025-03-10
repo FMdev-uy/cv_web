@@ -1,1 +1,1 @@
-# cv_web
+#This is a personal project where im programming a Web Curriculum from scratch to develop better skills on HTML,CSS and JavaScript , but I also want to use this Web CV as a presentation card for future job oportunities, hope you like it <3. 
