@@ -22,7 +22,7 @@ h2{
     border-radius: 14px;
     text-shadow: 2px 2px 3px rgb(31, 1, 28);
     color: rgb(191, 0, 255);
-    background-color: rgba(34, 17, 44, 0.884);
+    background-color: rgb(41 3 60 / 88%);
     height: calc(10vh - 6px);
     width: calc(100vw - 8px);
     flex-direction: row;
