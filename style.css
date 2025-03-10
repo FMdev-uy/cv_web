@@ -77,10 +77,18 @@ span{
     flex: 1.3;
 
 }
-#estudios:hover,#cualidades:hover,#contacto:hover,#idiomas:hover,#libreta:hover,#fing:hover,#tecnologias:hover{
+#estudios:hover,#cualidades:hover,#contacto:hover,#idiomas:hover,#libreta:hover{
     border: 1px solid;
     color: rgb(255, 0, 238);
     border-radius: 10px;
+    background-color: rgba(42, 29, 51, 0.884);
+    border-style:inherit;
+    font-size: 17px;
+}
+#fing:hover,#tecnologias:hover{
+    border: 1px solid;
+    color: rgb(255, 0, 238);
+    border-radius: 9px;
     background-color: rgb(56, 14, 95);
     border-color:rgb(170, 0, 255) ;
 }
