@@ -4,7 +4,7 @@ body{
     margin: 0;
 }
 h2{
-    color:rgb(133 31 255);
+    color:rgb(179 0 255);
     margin: 0;
 }
 #info{
@@ -21,7 +21,7 @@ h2{
     border: 1px transparent;
     border-radius: 14px;
     text-shadow: 2px 2px 3px rgb(31, 1, 28);
-    color: rgb(191, 0, 255);
+    color: rgb(211 186 230);
     background-color: rgb(41 3 60 / 88%);
     height: calc(10vh - 6px);
     width: calc(100vw - 8px);
