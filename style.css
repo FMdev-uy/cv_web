@@ -4,7 +4,7 @@ body{
     margin: 0;
 }
 h2{
-    color:rgb(114 52 210);
+    color:rgb(133 31 255);
     margin: 0;
 }
 #info{
@@ -94,7 +94,7 @@ h1{
     flex-direction: column;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    background-color: rgb(112, 102, 116);
+    background-color: rgb(92 80 97);
     height: 100%;
     flex: 5;
 
