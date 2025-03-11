@@ -17,6 +17,25 @@ h2{
     color:rgb(179 0 255);
     margin-bottom:0;
 }
+
+h1{
+    display: flex;
+    width: fit-content;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin:2px 0px 0px 0px;
+}
+a:link{
+    color: white;
+}
+
+a:hover{
+    color: rgb(225, 0, 255);
+
+}
 #info{
     display: flex;
     flex-direction: row;
@@ -38,17 +57,6 @@ h2{
     flex-direction: row;
 
 }
-h1{
-    display: flex;
-    width: fit-content;
-
-}
-a{
-    color: white;
-    text-decoration: none;
-    margin:2px 0px 0px 0px;
-}
-
 #gif{
     display: flex;
     margin-left: 20px;
@@ -89,14 +97,7 @@ a{
     background-color: rgb(56, 14, 95);
     border-color:rgb(170, 0, 255) ;
 }
-a:link{
-    color: white;
-}
 
-a:hover{
-    color: rgb(225, 0, 255);
-
-}
 #fran{
     margin-top: auto;
     display: flex;
@@ -120,7 +121,6 @@ a:hover{
     padding: 8px;
     border-radius: 14px;
     margin-right: 4px;
-    margin-bottom: 4px;
     display: flex;
     flex-direction: column;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
@@ -142,7 +142,7 @@ a:hover{
 
 }
 #estudios,#cualidades,#contacto,#idiomas,#libreta{
-    margin-bottom: 14px;
+    margin-bottom: 9px;
     height: fit-content;
     margin-left: 4px;
     display: flex;
