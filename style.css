@@ -142,7 +142,7 @@ a:hover{
 
 }
 #estudios,#cualidades,#contacto,#idiomas,#libreta{
-    margin-bottom: 9px;
+    padding-bottom: 10px;
     height: fit-content;
     margin-left: 4px;
     display: flex;
