@@ -98,7 +98,6 @@ a:hover{
 }
 #estudios:hover,#cualidades:hover,#contacto:hover,#idiomas:hover,#libreta:hover{
     border: 1px transparent;
-    border-radius: 6px;
     padding-left: 2px;
     padding-right: 2px;
     background-color: rgba(31, 27, 58, 0.884);
@@ -108,7 +107,6 @@ a:hover{
 #fing:hover,#tecnologias:hover{
     border: 1px solid;
     color: rgb(171, 131, 245);
-    padding: 4px 4px 4px 4px;
     border-radius: 9px;
     background-color: rgb(56, 14, 95);
     border-color:rgb(170, 0, 255) ;
