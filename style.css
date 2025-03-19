@@ -58,7 +58,6 @@ a:hover{
 #gif{
     display: flex;
     width: auto;
-    margin-left: 10px;
     height: 70px;
     justify-self:flex-end
 
@@ -89,8 +88,9 @@ a:hover{
     display: flex;
     align-items: start;
     flex-direction: column;
-    overflow-y: hidden;
     background-color: rgba(39, 31, 87, 0.884);
+    overflow-y: auto;
+    overflow-x: hidden;
     font-size: 14px;
     height: 100% ;
     flex: 1;
@@ -110,7 +110,6 @@ a:hover{
     color: rgb(171, 131, 245);
     padding: 4px 4px 4px 4px;
     border-radius: 9px;
-    max-width: 60%;
     background-color: rgb(56, 14, 95);
     border-color:rgb(170, 0, 255) ;
 }
@@ -121,15 +120,13 @@ a:hover{
     height: auto;
     min-height: 45%;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    align-items:end;
     justify-self:flex-end
 }
 #franimg{
     display: flex;
-    padding-top: auto;
+    margin-top: auto;
     justify-self: flex end;
-    align-items: center;
     min-height: 100%;
     height:auto;
     width: auto;   
