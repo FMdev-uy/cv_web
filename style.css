@@ -58,6 +58,7 @@ a:hover{
 #gif{
     display: flex;
     width: auto;
+    margin-left: 10px;
     height: 70px;
     justify-self:flex-end
 
@@ -88,6 +89,7 @@ a:hover{
     display: flex;
     align-items: start;
     flex-direction: column;
+    overflow-y: hidden;
     background-color: rgba(39, 31, 87, 0.884);
     font-size: 14px;
     height: 100% ;
