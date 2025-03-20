@@ -1,0 +1,150 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color-a:rgb(31, 21, 68);
+    --color-b:rgb(47, 46, 83);
+}
+body{
+    background-color: var(--color-a);
+    color: white;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    color: rgb(174, 0, 255);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:link{
+    color: white;
+}
+
+a:hover{
+    color: rgb(255, 0, 242);
+
+}
+
+#nav{
+    display: flex;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px;
+    border-color: rgb(130, 49, 206);
+    border-style: groove;
+    text-shadow: 2px 2px 3px rgb(31, 1, 28);
+    background-color: rgba(25, 2, 61, 0.88);
+}
+
+#principal{
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    width: 100vw;
+    height: calc(100vh - 90px);
+}
+#sobre-mi{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color:var(--color-a);
+    height: 20vh;
+    width: 100%;
+
+}
+
+#habilidades{
+    display: flex;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    background-color: var(--color-a);
+    height: 29vh;
+    gap: 10px;
+    width: 100%;
+}
+
+.divHabilidades{
+    text-align: center;
+    border-radius: 15px;
+    background-color:var(--color-b);
+    padding: 5px;
+    height: fit-content;
+    display: flex;
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+}
+
+.divHabilidades:hover{
+    height: 100%;
+    background-color:rgba(148, 123, 194, 0.137);
+    font-size: 16px;
+}
+
+#skills{
+    display: flex;
+    background-color:var(--color-a);
+    height: 100vh;
+    width: 100%;
+}
+#tecnologias{
+    background-color:rgba(7, 1, 17, 0.137);
+    margin-top: 10px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    border: transparent;
+    border-radius: 10px;
+    height: 50vh;
+    width: 100%;
+}
+#experiencia{
+    display: flex;
+    padding-top: 15px;
+    border: transparent;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color:rgba(148, 123, 194, 0.137);;
+    height: 100vh;
+    width: 100%;
+}
+
+#fing{
+    padding: 4px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
