@@ -14,7 +14,7 @@ body{
     box-sizing: border-box;
 }
 h2{
-    font-size: clamp(14px,2vw,3vw);
+    font-size: clamp(16px,2vw,3vw);
     text-align: center;
     color: rgb(174, 0, 255);
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
@@ -59,7 +59,7 @@ a:hover{
     height: calc(100vh - 90px);
 }
 #sobre-mi{
-    padding: 20px;
+    padding: 14px;
     font-size: clamp(13px,1vw,2vw);
     display: flex;
     flex-direction: column;
