@@ -14,6 +14,7 @@ body{
     box-sizing: border-box;
 }
 h2{
+    font-size: clamp(14px,2vw,3vw);
     text-align: center;
     color: rgb(174, 0, 255);
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
@@ -36,10 +37,10 @@ a:hover{
     display: flex;
     top: 0;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 90px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: clamp(2rem,3vw,3rem);
+    font-size: clamp(20px,30px,60px);
     color: aliceblue;
     align-items: center;
     justify-content: center;
@@ -54,12 +55,12 @@ a:hover{
     display: flex;
     flex-direction: column;
     margin-top: 90px;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 90px);
 }
 #sobre-mi{
     padding: 20px;
-    font-size: clamp(10px,16px,20px);
+    font-size: clamp(13px,1vw,2vw);
     display: flex;
     flex-direction: column;
     background-color:var(--color-a);
@@ -69,6 +70,7 @@ a:hover{
 }
 
 #habilidades{
+    font-size: clamp(14px,20px,2vw);
     display: flex;
     margin-top: 30px;
     padding-left: 10px;
@@ -83,6 +85,7 @@ a:hover{
 .divHabilidades{
     text-align: center;
     border-radius: 15px;
+    font-size: clamp(20%,16px,80%);
     background-color:var(--color-b);
     padding: 5px;
     height: fit-content;
@@ -95,7 +98,6 @@ a:hover{
 .divHabilidades:hover{
     height: 100%;
     background-color:rgba(148, 123, 194, 0.137);
-    font-size: 16px;
 }
 
 #skills{
