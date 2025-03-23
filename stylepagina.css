@@ -74,9 +74,10 @@ a:hover{
     padding-right: 10px;
     flex-direction: row;
     background-color: var(--color-a);
-    height: 29vh;
+    height: auto;
+    max-height: 50vh;
     gap: 10px;
-    width: 100%;
+    width: 80%;
 }
 
 .divHabilidades{
@@ -117,6 +118,25 @@ a:hover{
     height: 50vh;
     width: 100%;
 }
+#gridimagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 80%;
+    max-width: 250px;
+    justify-content: center;
+  }
+  
+  #gridimagenes img {
+    width: 100%;
+    height: auto; 
+    aspect-ratio: 1 / 1; /* Mantiene las imágenes cuadradas */
+    object-fit: contain; 
+    background-color: white; 
+    padding: 5px;
+    border-radius: 60px; 
+  }
+  
 #experiencia{
     display: flex;
     padding-top: 15px;
