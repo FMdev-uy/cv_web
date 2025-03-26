@@ -7,7 +7,7 @@
 
 :root{
     --color-a:rgb(12, 22, 18);
-    --color-b:rgb(35, 53, 30);
+    --color-b:rgb(26, 37, 22);
 }
 
 body{
@@ -20,10 +20,19 @@ body{
 h2{
     font-size: clamp(16px,2vw,3vw);
     text-align: center;
-    color: #9dff00;
-    text-shadow: 0px 0px 8px#d0ff00;
+    margin-bottom: 4px;
+    color:rgba(3, 20, 0, 0.788);
+    animation: light 5s steps(30) infinite ;
 }
-
+@keyframes light {
+  5%{color: #9bf777;text-shadow:0px 0px 11px#91ff00;}
+  10%{color: #95e600;text-shadow:0px 0px 6px#91ff00;}
+  20%{text-shadow:0px 0px 6px#91ff00;color: #a2ff00;}
+  40%{text-shadow:0px 0px 2px#91ff00;}
+  50%{text-shadow:0px 0px 4px#91ff00;color: #a2ff00;}
+  60%{color: #a2ff00;}
+  96%{color: #0f1d00;}
+}
 a{
     color: #9dff00;;
     text-decoration: none;
@@ -34,7 +43,7 @@ a:link{
 
   a:hover{
     color: rgb(51, 255, 0);
-    text-shadow: 1px 1px 4px rgb(145, 255, 0);
+    text-shadow: 0px 0px 2px rgb(81, 255, 0);
 
   }
 
@@ -50,8 +59,14 @@ a:link{
     align-items: center;
     justify-content: center;
     text-shadow: 1px 2px 4px rgb(21, 36, 1);
-    background-color: rgba(29, 41, 25, 0.88);
+    background-color: rgba(5, 10, 3, 0.88);
   }
+
+  #nav span{
+    animation: parpadeo 2s steps(22) forwards ;
+  }
+
+
 
   #principal{
     display: flex;
@@ -89,7 +104,7 @@ a:link{
 
   .divHabilidades{
     text-align: center;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: clamp(20%,16px,80%);
     background-color:var(--color-b);
     padding: 5px;
@@ -103,14 +118,14 @@ a:link{
   .divHabilidades:hover{
     height: 100%;
     color: rgb(115, 255, 0);
-    background-color:rgba(39, 38, 38, 0.267);
+    background-color:rgba(0, 0, 0, 0.267);
     transition:0.3s ease;
   }
 
   #skills{
     display: flex;
     background-color:var(--color-a);
-    height: 100vh;
+    height: 22vh;
     width: 100%;
   }
 
@@ -123,10 +138,21 @@ a:link{
     padding-top: 15px;
     margin-bottom: 10px;
     border: transparent;
-
     height: auto;
     max-height: 22vh;
     width: 100%;
+    }
+
+    #tecnologias span{
+      font-size: clamp(16px,2vw,3vw);
+      text-align: center;
+      margin-bottom: 20px;
+      color: #bbff00;
+    }
+
+    #tecnologias a{
+      margin-bottom: 20px;
+      color: #ffffff;
     }
 
   #gridimagenes {
@@ -140,7 +166,7 @@ a:link{
   
   #gridimagenes img {
     width: 100%;
-    margin-bottom:20px;
+    margin-bottom:10px;
     filter: saturate(0);
     height: auto; 
     aspect-ratio: 1 / 1; /* Mantiene las imágenes cuadradas */
@@ -162,10 +188,9 @@ a:link{
   #gridimagenes img:hover {
     filter: sepia(2) hue-rotate(34deg) saturate(5);
     background-color: #fbff0025;
-    transition: 130ms ease;
+    transition: 1s;
     animation: parpadeo 0.1s steps(22) infinite alternate,
                glitch 0.2s steps(22) infinite alternate,
-               tamaño 3.4s steps(22) infinite ,
                skew 0.5s steps(26) infinite alternate;
 }
 
@@ -173,7 +198,8 @@ a:link{
     0% { opacity: 60%; }
     50% { opacity: 20%; }
     50% { opacity: 90%; }
-    100% { opacity: 100%; }
+    100% { opacity: 100%; 
+    text-shadow: 1px 1px 7px#b3ff00;}
 }
 @keyframes tamaño {
   0% { width: 65px; }
@@ -191,114 +217,14 @@ a:link{
     75% { transform: translate(1px, -1px); }
     100% { transform: translate(0, 0); }
 }
-
-  #experiencia{
-    display: flex;
-    padding-top: 15px;
-    border: transparent;
-    align-items: center;
-    border-radius: 10px;
-    flex-direction: column;
-    background-color:rgba(148, 123, 194, 0.137);;
-    height: 100vh;
-    width: 100%;
-  }
-
   #proyectos{
     padding: 4px;
-    height: 60vh;
+    height: 100vh;
     width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
   }
-  .card {
-    position: center;
-    width: auto;
-    max-width: 300px;
-    aspect-ratio: 16/9;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    perspective: 1000px;
-    box-shadow: 0 0 0 5px #ffffff80;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card svg {
-    width: 48px;
-    fill: #333;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card__image {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-  }
-  
-  .card__content {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    font-size: (0.7rem,20px,2vw);
-    box-sizing: border-box;
-    background-color: #f2f2f2;
-    transform: rotateX(-90deg);
-    transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card:hover .card__content {
-    transform: rotateX(0deg);
-  }
-  
-  .card__title {
-    margin: 0;
-    font-size: clamp(0.7rem,20px,2vw);;
-    color: #333;
-    font-weight: 700;
-  }
-  
-  .card:hover svg {
-    scale: 0;
-  }
-  
-  .card__description {
-    margin: 10px 0 10px;
-    font-size: 12px;
-    color: #777;
-    line-height: 1.4;
-  }
-  
-  .card__button {
-    padding: 10px 15px 23px 15px;
-    border-radius: 8px;
-    height: auto;
-    font-size: 10px;
-    justify-items: center;
-    align-items: center;
-    max-height: 10px;
-    background: #777;
-    border: none;
-    color: white;
-  }
-  
-  .secondary {
-    background: transparent;
-    color: #777;
-    border: 1px solid #777;
-  }
-  
 
   .wrapper {
     display: inline-block;
@@ -309,7 +235,7 @@ a:link{
     color: rgb(43, 255, 0);
     white-space: nowrap;
     overflow: hidden;
-    text-shadow: 1px 1px 7px#48ff00;
+    text-shadow: 1px 1px 6px#48ff00;
     border-right: 4px solid rgb(0, 255, 34);
     width: 0; 
     animation: typing 2.5s steps(22, end) forwards, 
