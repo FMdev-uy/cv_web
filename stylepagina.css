@@ -113,11 +113,12 @@ a:link{
     height: 100%;
     flex: 1;
     flex-direction: column;
+    transition: 0.7s;
   }
 
   .divHabilidades:hover{
     height: 100%;
-    color: rgb(115, 255, 0);
+    color: rgb(166, 255, 0);
     background-color:rgba(0, 0, 0, 0.267);
     transition:0.3s ease;
   }
@@ -257,4 +258,3 @@ a:link{
       border-color: transparent;
     }
   }
-
