@@ -106,7 +106,7 @@ a:link{
     text-align: center;
     border-radius: 10px;
     font-size: clamp(20%,16px,80%);
-    background-color:var(--color-b);
+    background-color:rgb(6, 14, 2);
     padding: 5px;
     height: fit-content;
     display: flex;
@@ -140,7 +140,8 @@ a:link{
     margin-bottom: 10px;
     border: transparent;
     height: auto;
-    max-height: 22vh;
+    min-height: 30vh;
+    max-height: 30vh;
     width: 100%;
     }
 
